@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #fff;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 40px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 110px;
+    z-index: 10;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  nav img {
+    width: 150px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .nav-link {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+  .nav-link a{
+    text-decoration: none;
+    color: #1f1f24
+  }
+  
+  .nav-link a:hover {
+    color: #886d5f;
+  }
+  
+  button {
+    margin-right: 10px;
+    background-color: #886d5f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 12px 16px;
+    outline: none;
+  }
+
+  button:hover{
+    box-shadow: 0px 3px 25px -1px rgba(0, 0, 0, 0.3);
+  }
+  
+.contactleft  button {
+    margin-top: 20px;
+}
+  li{
+    list-style: none;
+  }
+  
+.main-container{
+    background-image: url(assets/bg.jpg);
+}
+.container {
+    width: 80vw;
+    margin: 0px auto;
+    padding: 30px 0;
+}
+.contactbox {
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+} 
+.contactleft {
+    flex-basis: 60%; /*specifies initial length of a flexible item, kinda pushes that item across the flexbox*/
+    padding: 40px 60px;
+}
+.contactright {
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: #473c35;
+    color: white;
+}
+h1 {
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 40px;
+}
+.inputrow {
+    display: flex;
+    justify-content: space-between; /*aligns the flexible container's items when the items 
+    do not use all available space on the main-axis (horizontally)*/
+    margin-bottom: 20px;
+}
+.inputrow .inputgroup{
+    flex-basis: 45%;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #886d5f;
+    outline: none; /*An outline is a line drawn outside the element's border*/
+    padding-bottom: 5px;
+}
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #886d5f;
+    font-weight: bolder;
+}
+
+.contactleft h3 {
+    color: #473c35;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contactright h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td {
+    padding-top: 20px;
+}
+
+footer {
+    background: #1f1f24;
+    height: 49vh;
+    width: 100vw;
+    padding: 50px 60px;
+  }
+  
+  .footer-containers {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .footer-container h3,
+  .footer-social h3 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-container p {
+    font-size: 12px;
+  }
+  
+  .footer-container i,
+  .footer-social i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 0;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .footer-social {
+    width: 30%;
+    height: 100%;
+  }
+  
+  .social {
+    display: flex;
+  }
+  
+  footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color:  rgba(255, 255, 255, 0.7);
+  }
+  
